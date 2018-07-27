@@ -20,11 +20,11 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', '.json']
     },
     plugins: [
-        new UglifyJsPlugin({
-            minimize: true,
-            sourceMap: true,
-            include: /\.min\.js$/,
-        }),
+        // new UglifyJsPlugin({
+        //     minimize: true,
+        //     sourceMap: true,
+        //     include: /\.min\.js$/,
+        // }),
         new CompressionPlugin({
             include: /\.min\.js$/,
         })
